@@ -134,7 +134,7 @@ const propertyLocations = [
 	{
 		name: "Bali, Indonesia",
 		image: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=600&q=80",
-		rating: "4.7",
+		rating: "4.8",
 		badge: "Eco"
 	},
 	{
