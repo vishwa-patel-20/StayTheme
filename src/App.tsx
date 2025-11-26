@@ -3,12 +3,12 @@ import "./App.css";
 import logo from "./assets/logo.svg";
 import logochar from "./assets/logoChar.svg";
 import mobile from "./assets/mobile.svg";
-import theme1 from "./assets/theme1.svg";
-import theme2 from "./assets/theme2.svg";
-import theme3 from "./assets/theme3.svg";
-import theme4 from "./assets/theme4.svg";
-import theme5 from "./assets/theme5.svg";
-import theme6 from "./assets/theme6.svg";
+import theme1 from "./assets/theme1.jpg";
+import theme2 from "./assets/theme2.jpg";
+import theme3 from "./assets/theme3.jpg";
+import theme4 from "./assets/theme4.jpg";
+import theme5 from "./assets/theme5.jpg";
+import theme6 from "./assets/theme6.jpg";
 
 const heroFilters = [
 	{ label: "Destination", value: "Alpine Meadows" },
