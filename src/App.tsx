@@ -1,6 +1,7 @@
 import "./App.css";
 
 import logo from "./assets/logo.svg";
+import logochar from "./assets/logoChar.svg";
 import mobile from "./assets/mobile.svg";
 import theme1 from "./assets/theme1.svg";
 import theme2 from "./assets/theme2.svg";
@@ -456,7 +457,7 @@ function App() {
 			<footer className="site-footer">
 				<div className="footer-brand">
 					<div className="brand-mark">
-						<img src={logo} alt="StayTheme logo" />
+						<img src={logochar} alt="StayTheme logo" />
 					</div>
 					<p>
 						At StayTheme we hand-pick themed properties across continents, curate concierge services, and bring serene
