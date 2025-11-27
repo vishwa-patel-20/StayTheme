@@ -2,7 +2,7 @@ import "./App.css";
 
 import logo from "./assets/logo.svg";
 import logochar from "./assets/logoChar.svg";
-import mobile from "./assets/mobile.svg";
+import mobile from "./assets/mobile.jpg";
 import theme1 from "./assets/theme1.jpg";
 import theme2 from "./assets/theme2.jpg";
 import theme3 from "./assets/theme3.jpg";
