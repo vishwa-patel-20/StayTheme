@@ -11,10 +11,10 @@ import theme5 from "./assets/theme5.jpg";
 import theme6 from "./assets/theme6.jpg";
 
 const heroFilters = [
-	{ label: "Destination", value: "Alpine Meadows" },
-	{ label: "Suites", value: "Nature Cabins" },
-	{ label: "Guests", value: "02 Adults" },
-	{ label: "Budget", value: "$250 / Night" }
+	{ label: "Add your location", value: "Add your location" },
+	{ label: "Select a theme", value: "Select a theme" },
+	{ label: "Select date", value: "Select date" },
+	{ label: "Add guests", value: "Add guests" }
 ];
 
 const themeTabs = ["All", "Villas", "Beachfront", "Mountain", "Desert", "City Urban", "Lakefront"];
@@ -45,7 +45,7 @@ const themeCards = [
 		rating: "5.0",
 		beds: "5 Beds",
 		baths: "4 Baths",
-		image: "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=600&q=80"
+		image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1500&q=80"
 	},
 	{
 		title: "Woodland Chalet",
@@ -69,107 +69,131 @@ const curatedCollection = {
 
 const highlightCards = [
 	{
-		title: "Summit Escape",
-		location: "Aspen, USA",
-		tag: "New",
+		title: "Serenity Soiree Villa",
+		location: "Bali, Indonesia",
+		price: "$203",
+		rating: "4.9",
 		image: theme1
 	},
 	{
-		title: "Azure Coastline",
-		location: "Capri, Italy",
-		tag: "Top Rated",
+		title: "Coastal Paradiso",
+		location: "Phuket, Thailand",
+		price: "$219",
+		rating: "4.8",
 		image: theme2
 	},
 	{
-		title: "Serenity Soiree",
-		location: "Bali, Indonesia",
-		tag: "Trending",
+		title: "Royal Retreat Villa",
+		location: "Colorado, USA",
+		price: "$249",
+		rating: "5.0",
 		image: theme3
 	},
 	{
-		title: "Urban Haven",
-		location: "Berlin, Germany",
-		tag: "Recommended",
+		title: "Woodland Chalet",
+		location: "Mt. Hood, USA",
+		price: "$175",
+		rating: "4.7",
 		image: theme4
-	},
-	{
-		title: "Monsoon Retreat",
-		location: "Kerala, India",
-		tag: "Family",
-		image: theme5
-	},
-	{
-		title: "Pastel Dunes",
-		location: "Doha, Qatar",
-		tag: "Desert",
-		image: theme6
 	}
 ];
+
+const featureThumbs = [theme5, theme6, theme1];
 
 const bookingSteps = [
 	{
 		step: "01",
 		title: "Search & Choose",
-		desc: "Browse curated eco retreats, compare amenities, and shortlist your dream stay."
+		desc: "Enter your destination, dates, and guest details to find the perfect property that fits your needs."
 	},
 	{
 		step: "02",
 		title: "Review & Confirm",
-		desc: "Inspect high-resolution galleries, read guest reviews, and finalize the dates."
+		desc: "Make sure the dates and guest count match your requirements before confirming your booking."
 	},
 	{
 		step: "03",
 		title: "Book & Pay Securely",
-		desc: "Complete the reservation with our protected checkout and receive instant confirmation."
+		desc: "Complete your reservation securely, and receive instant confirmation with updates about your stay."
 	}
+];
+
+const locationFilters = [
+	{ label: "Maldives", icon: "🏝️" },
+	{ label: "Thailand", icon: "🌺" },
+	{ label: "Colorado", icon: "⛰️" },
+	{ label: "Greece", icon: "🏛️" },
+	{ label: "Italy", icon: "🍝" },
+	{ label: "Tuscany", icon: "🍇" },
+	{ label: "Phuket", icon: "🌅" }
 ];
 
 const propertyLocations = [
 	{
-		name: "Thailand",
-		image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+		name: "Serenity Soiree Villa",
+		region: "Bali, Indonesia",
+		image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
 		rating: "4.9",
-		badge: "New"
+		tag: "Eco Stay",
+		price: "$203 / Night"
 	},
 	{
-		name: "Bali, Indonesia",
-		image: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=600&q=80",
+		name: "Royal Retreat Villa",
+		region: "Tuscany, Italy",
+		image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
 		rating: "4.8",
-		badge: "Eco"
+		tag: "Heritage",
+		price: "$249 / Night"
 	},
 	{
-		name: "Colorado, USA",
-		image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80",
+		name: "Lakefront Manor",
+		region: "Queenstown, NZ",
+		image: "https://images.unsplash.com/photo-1439130490301-25e322d88054?auto=format&fit=crop&w=1200&q=80",
 		rating: "5.0",
-		badge: "Trending"
+		tag: "Top Rated",
+		price: "$289 / Night"
 	}
 ];
 
-const testimonials = [
+const guestSpotlight = {
+	image: "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=900&q=80",
+	avatars: ["https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=200&q=60", "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=60", "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=60"]
+};
+
+const guestImpressions = [
 	{
-		quote: "The photos were exactly as described. We finally discovered a retreat that truly matched the location and vibe we were searching for.",
+		quote:
+			"The property felt like a dream. The concierge curated sunrise hikes and candle-lit dinners that made our stay unforgettable.",
 		name: "Jane Cooper",
-		role: "CEO, AESC Corporation",
-		avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
+		role: "Creative Director",
+		stay: "Serenity Soiree Villa",
+		avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=60",
+		rating: 5
 	},
 	{
-		quote: "Within minutes we finalized dates, reviewed the house rules, and booked. The curated list saved us hours of research.",
+		quote:
+			"We loved the seamless booking flow and sustainable amenities. The villa matched the Figma preview to perfection.",
 		name: "Alan Jackson",
-		role: "CEO, AISC Corporation",
-		avatar: "https://images.unsplash.com/photo-1544723795-4325376281d6?auto=format&fit=crop&w=200&q=80"
+		role: "CEO, ABC Group",
+		stay: "Royal Retreat Villa",
+		avatar: "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=200&q=60",
+		rating: 5
 	},
 	{
-		quote: "From the booking flow to the concierge chat, everything felt premium. Our family getaway was effortless.",
-		name: "Jane Cooper",
-		role: "COO, Alpine Collections",
-		avatar: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80"
+		quote:
+			"The curated local experiences were the highlight. Every day had a new surprise tailored to our interests.",
+		name: "Jenny Wilson",
+		role: "Product Lead",
+		stay: "Summit Escape Chalet",
+		avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=60",
+		rating: 5
 	}
 ];
 
 const faqs = [
 	{
 		question: "How do I become a host on your platform?",
-		answer: "Submit property details, showcase themed rooms, and our team will guide you through the onboarding checklist."
+		answer: "To add your property to our platform, click the 'Become a Host' button on the homepage. Fill out the form, submit property details and images, and our team will guide you through the approval process."
 	},
 	{
 		question: "What payment methods do you accept?",
@@ -189,50 +213,58 @@ function App() {
 	return (
 		<div className="staytheme-page">
 			<section className="hero-banner" id="hero">
+				
 				<header className="main-header">
 					<div className="brand-mark">
 						<img src={logo} alt="StayTheme logo" />
 					</div>
 					<nav className="primary-nav">
 						<a href="#hero" className="active">Home</a>
-						<a href="#themes">Themes</a>
-						<a href="#collection">Collections</a>
-						<a href="#process">Process</a>
-						<a href="#locations">Locations</a>
+						<a href="#themes">About Us</a>
+						<a href="#collection">Properties</a>
+						<a href="#faq">Contact Us</a>
 					</nav>
 					<div className="header-actions">
-						<button className="ghost-btn light">Become a Host</button>
-						<button className="solid-btn outline">Login</button>
+						<button className="ghost-btn inverted">Become a Host</button>
+						<button className="solid-btn light-pill">Login</button>
 					</div>
 				</header>
 
 				<div className="hero-content-stack">
-					<div className="hero-card">
-						<p className="hero-pill">Eco Escapes</p>
-						<h1>Escape To Nature With Our Eco Retreats</h1>
-						<p className="hero-subtext">
-							We hand-pick every property to ensure timeless architecture, high standards for comfort, concierge
-							experiences, and quality.
-						</p>
-						<div className="hero-social">
-							<div className="avatar-group">
-								<span className="avatar" />
-								<span className="avatar" />
-								<span className="avatar" />
-								<span className="avatar last">+12</span>
-							</div>
-							<p>Trusted by 25k+ happy guests across 46 locations.</p>
+
+				<div className="hero-card">
+					<div className="hero-card-container">
+						<div className="hero-card-content">
+							<h1>Escape to Nature with Our Eco Retreats</h1>						
 						</div>
-					</div>
-					<div className="hero-filters">
+						<div>
+							<div className="hero-social">
+								<div>
+									<div className="avatar-group">
+										<span className="avatar" />
+										<span className="avatar" />
+										<span className="avatar" />
+										<span className="avatar last">+12</span>
+									</div>
+									<p className="hero-subtext">
+										We hand-pick every property to ensure timeless architecture, high standards for comfort, concierge
+										experiences, and quality.
+									</p>
+								</div>
+							</div>
+						</div>		
+						</div>				
+				
+						<div className="hero-filters">
 						{heroFilters.map((item) => (
 							<div className="filter-chip" key={item.label}>
 								<p>{item.label}</p>
-								<strong>{item.value}</strong>
 							</div>
 						))}
 						<button className="solid-btn search-btn">Search</button>
+						</div>
 					</div>
+					
 				</div>
 			</section>
 
@@ -241,98 +273,120 @@ function App() {
 				<section className="themes-section" id="themes">
 					<div className="section-header">
 						<div>
-							<p className="eyebrow">Curated Selections</p>
-							<h2>Choose From A Range Of Unique Themes</h2>
-							<p className="muted">
-								Discover bespoke villas, lakeside cabins, and mountain hideouts built to inspire unforgettable memories.
-							</p>
+							<h2>Choose From A Range Of Unique Themes</h2>							
+						</div>
+						<p className="muted">
+							Choose from a wide selection of curated themes that promise unforgettable experiences and easy access to destinations.
+						</p>						
+					</div>
+					<div className="theme-container">
+						<div className="theme-tabs">
+							{themeTabs.map((tab) => (
+								<button key={tab} className={`tab-pill ${tab === "All" ? "active" : ""}`}>
+									{tab}
+								</button>
+							))}
 						</div>
 						<button className="ghost-btn">Explore Properties</button>
 					</div>
-					<div className="theme-tabs">
-						{themeTabs.map((tab) => (
-							<button key={tab} className={`tab-pill ${tab === "All" ? "active" : ""}`}>
-								{tab}
-							</button>
-						))}
-					</div>
 					<div className="theme-grid">
 						{themeCards.map((card) => (
-							<article className="theme-card" key={card.title}>
-								<img src={card.image} alt={card.title} />
-								<div className="theme-card-body">
-									<div>
-										<h3>{card.title}</h3>
-										<p>{card.location}</p>
-									</div>
-									<div className="theme-meta">
-										<span>{card.price}</span>
-										<span>⭐ {card.rating}</span>
-									</div>
-									<div className="theme-amenities">
-										<span>{card.beds}</span>
-										<span>{card.baths}</span>
-									</div>
-									<button className="solid-btn small">Book Now</button>
-								</div>
-							</article>
+							<div key={card.title}>
+									<img className="theme-img" src={card.image} alt={card.title} />
+									<article className="theme-card">									
+										<div className="theme-card-body">
+											<div>
+												<h3>{card.title}</h3>
+												<p>{card.location}</p>
+											</div>
+											<div className="theme-meta">
+												<span>⭐ {card.rating}</span>
+											</div>
+											
+										</div>
+									</article>
+							</div>
 						))}
 					</div>
 				</section>
 
 				<section className="collection-section" id="collection">
-					<div className="collection-highlight">
-						<div className="collection-media">
-							<img src={curatedCollection.image} alt={curatedCollection.title} />
-							<div className="media-tags">
-								<span>Serenity Retreat</span>
-								<span>Included Meals</span>
-								<span>Spa Access</span>
+					<div className="collection-heading">
+						<h2>
+							Explore Our Diverse{" "}
+							<span className="heading-icon">
+								<img src={curatedCollection.image} alt="Collection badge" />
+							</span>{" "}
+							Collection Now And Book Your Next Vacation Spot In Just A Few Clicks!
+						</h2>						
+					</div>
+					<div className="collection-showcase">
+						<article className="collection-feature-card">
+							<div className="feature-card__header">
+								<span className="feature-arrow">↗</span>
+								<span className="feature-rating">⭐ 4.9</span>
 							</div>
-						</div>
-						<div className="collection-details">
-							<p className="eyebrow">Featured Collection</p>
-							<h2>Explore Our Diverse Collection And Book In Just A Few Clicks</h2>
-							<p>
-								Choose from curated suites that combine modern comfort with natural surroundings. Every stay includes
-								private concierges, guided excursions, and sustainable amenities.
-							</p>
-							<ul>
-								<li>{curatedCollection.nights}</li>
-								<li>{curatedCollection.baths}</li>
-								<li>Complimentary breakfast</li>
-								<li>Driver on request</li>
-							</ul>
-							<div className="collection-price">
+							<h3>{curatedCollection.title}</h3>
+							<p className="feature-location">{curatedCollection.location}</p>
+							<div className="feature-stats">
+								<span>20 Guests</span>
+								<span>7 Rooms</span>
+								<span>6 Baths</span>
+							</div>
+							<div className="feature-perks">
+								<button>Serenity Retreat</button>
+								<button>Included Meals</button>
+								<button>Spa Access</button>
+							</div>
+							<div className="feature-price">
 								<div>
 									<strong>{curatedCollection.price}</strong>
 									<span>Per Night</span>
 								</div>
 								<button className="solid-btn">Book Now</button>
 							</div>
-						</div>
-					</div>
-					<div className="collection-carousel">
-						{highlightCards.map((card) => (
-							<div className="mini-card" key={card.title}>
-								<img src={card.image} alt={card.title} />
-								<div className="mini-body">
-									<p className="tag">{card.tag}</p>
-									<h3>{card.title}</h3>
-									<p>{card.location}</p>
-								</div>
+							<div className="feature-thumbs">
+								{featureThumbs.map((imgSrc) => (
+									<img src={imgSrc} alt="Stay preview" key={imgSrc} />
+								))}
 							</div>
-						))}
+							<div className="feature-dots">
+								<span className="active" />
+								<span />
+								<span />
+							</div>
+						</article>
+						<div className="collection-carousel">
+							{highlightCards.map((card) => (
+								<article className="carousel-card" key={card.title}>
+									<img src={card.image} alt={card.title} />
+									<div className="carousel-card__body">
+										<h3>{card.title}</h3>
+										<p>{card.location}</p>
+										<div className="carousel-meta">
+											<span>⭐ {card.rating}</span>
+											<strong>{card.price}</strong>
+										</div>
+									</div>
+								</article>
+							))}
+							<div className="carousel-nav">
+								<button aria-label="Previous slide">←</button>
+								<div className="carousel-dots">
+									<span className="active" />
+									<span />
+									<span />
+								</div>
+								<button aria-label="Next slide">→</button>
+							</div>
+						</div>
 					</div>
 				</section>
 
 				<section className="process-section" id="process">
 					<div className="section-header">
-						<div>
-							<p className="eyebrow">Easy 3-Step Booking</p>
-							<h2>Plan A Scenic Stay Without The Stress</h2>
-						</div>
-						<button className="ghost-btn">Explore Process</button>
+						<p>Easy 3-Step Booking Process</p>
+						<button>Explore Properties</button>
 					</div>
 					<div className="steps-grid">
 						{bookingSteps.map((step) => (
@@ -346,32 +400,40 @@ function App() {
 				</section>
 
 				<section className="locations-section" id="locations">
-					<div className="section-header">
+					<div className="locations-header">
 						<div>
-							<p className="eyebrow">Properties By Location</p>
-							<h2>Pick A Destination & Start Packing</h2>
+							<h2>Properties By Location</h2>
+							<p>Explore our diverse collection now and book your next vacation spot in just a few clicks.</p>
 						</div>
-						<button className="ghost-btn">Explore Locations</button>
+						<button className="ghost-btn">Explore Properties</button>
 					</div>
 					<div className="location-tags">
-						{["Thailand", "Bali", "Colorado", "Greece", "Italy", "Turkey"].map((loc) => (
-							<button key={loc} className="tag-pill">
-								{loc}
+						{locationFilters.map((item, idx) => (
+							<button key={item.label} className={`tag-pill ${idx === 0 ? "active" : ""}`}>
+								<span>{item.icon}</span>
+								{item.label}
 							</button>
 						))}
 					</div>
-					<div className="location-grid">
+					<div className="location-panels">
 						{propertyLocations.map((location) => (
-							<article className="location-card" key={location.name}>
-								<img src={location.image} alt={location.name} />
-								<div className="location-body">
-									<div>
-										<h3>{location.name}</h3>
-										<p>Luxury Retreat</p>
-									</div>
-									<div className="location-meta">
+							<article className="location-panel" key={location.name}>
+								<div className="panel-image">
+									<img src={location.image} alt={location.name} />
+									<div className="panel-rating">
 										<span>⭐ {location.rating}</span>
-										<span>{location.badge}</span>
+										<button aria-label="View property">↗</button>
+									</div>
+								</div>
+								<div className="panel-body">
+									<div>
+										<p className="panel-tag">{location.tag}</p>
+										<h3>{location.name}</h3>
+										<p>{location.region}</p>
+									</div>
+									<div className="panel-footer">
+										<strong>{location.price}</strong>
+										<button className="ghost-btn small">Book Now</button>
 									</div>
 								</div>
 							</article>
@@ -379,123 +441,142 @@ function App() {
 					</div>
 				</section>
 
-				<section className="testimonials-section" id="testimonials">
-					<div className="section-header">
-						<div>
-							<p className="eyebrow">Testimonials</p>
-							<h2>Guests Share Their Favorite Moments</h2>
-						</div>
-						<div className="carousel-controls">
-							<button>{"<"}</button>
-							<button>{">"}</button>
-						</div>
-					</div>
-					<div className="testimonial-grid">
-						{testimonials.map((testimonial) => (
-							<article className="testimonial-card" key={testimonial.name + testimonial.role}>
-								<p className="quote">“{testimonial.quote}”</p>
-								<div className="author">
-									<img src={testimonial.avatar} alt={testimonial.name} />
-									<div>
-										<strong>{testimonial.name}</strong>
-										<span>{testimonial.role}</span>
-									</div>
+				<section className="guest-section" id="testimonials">
+					<div className="guest-wrapper">
+						<div className="guest-visual">
+							<div className="guest-heading">
+								<h2>Guest Impressions & Insights</h2>
+								<div className="guest-avatars">
+									{guestSpotlight.avatars.map((avatar) => (
+										<span key={avatar} style={{ backgroundImage: `url(${avatar})` }} />
+									))}
 								</div>
-							</article>
-						))}
+							</div>
+							<img src={guestSpotlight.image} alt="Guest experience" />
+						</div>
+						<div className="guest-testimonials">
+							{guestImpressions.map((guest) => (
+								<article className="guest-card" key={guest.name}>
+									<div className="guest-stars">
+										{Array.from({ length: guest.rating }).map((_, starIndex) => (
+											<span key={`${guest.name}-star-${starIndex}`}>★</span>
+										))}
+									</div>
+									<p className="quote">“{guest.quote}”</p>
+									<div className="guest-meta">
+										<img src={guest.avatar} alt={guest.name} />
+										<div>
+											<strong>{guest.name}</strong>
+											<span>{guest.role}</span>
+											<p>{guest.stay}</p>
+										</div>
+									</div>
+								</article>
+							))}
+						</div>
 					</div>
 				</section>
+			
 
 				<section className="app-section" id="download">
 					<div className="app-copy">
-						<p className="eyebrow">Get The App Now!</p>
-						<h2>Discover World-Class Retreats On The Go</h2>
+						<h2>Get The App Now!</h2>
 						<p>
-							Book stays, chat with concierges, complete checklists, and manage itineraries in a single mobile-first
-							experience.
+							Book curated stays, complete check-in, choose your room, and select your amenities from anywhere in the
+							world.
 						</p>
 						<div className="store-buttons">
 							<button className="solid-btn">Google Play</button>
-							<button className="ghost-btn">App Store</button>
+							<button className="ghost-btn inverted">App Store</button>
 						</div>
 					</div>
-					<div className="app-preview">
-						<img src={mobile} alt="Mobile preview" />
+					<div className="app-visual">
+						<div className="app-frame">
+							<span className="frame-corner" />
+							<span className="frame-corner" />
+							<span className="frame-corner" />
+							<span className="frame-corner" />
+							<div className="mobile-shell">
+								<img src={mobile} alt="StayTheme mobile preview" />
+							</div>
+						</div>
 					</div>
 				</section>
 
 				<section className="faq-section" id="faq">
-					<div className="section-header">
-						<div>
-							<p className="eyebrow">Frequently Asked Questions</p>
-							<h2>Everything You Need To Know Before Booking</h2>
+					<div className="faq-card">
+						<div className="faq-section-left">
+							<h2>Frequently Asked Questions</h2>
+							<button className="faq-cta">
+								<span>View All</span>
+								<span className="arrow">→</span>
+							</button>
 						</div>
-						<button className="ghost-btn">View All</button>
-					</div>
-					<div className="faq-list">
-						{faqs.map((faq) => (
+
+						<div className="faq-list faq-section-right">
+							{faqs.map((faq) => (
 							<details key={faq.question}>
 								<summary>{faq.question}</summary>
 								<p>{faq.answer}</p>
 							</details>
-						))}
+							))}
+						</div>
 					</div>
 				</section>
 
 				<section className="newsletter-section">
-					<div>
-						<p className="eyebrow">Get Newsletter Updates</p>
-						<h2>Subscribe To The Latest News From Us</h2>
+					<div className="newsletter-copy">
+						<h2>Get Newsletter Updates</h2>
+						<p className="muted">Subscribe to get the latest news from us</p>
 					</div>
 					<form className="newsletter-form">
 						<input type="email" placeholder="Enter email address" />
-						<button className="solid-btn" type="submit">Subscribe</button>
 					</form>
 				</section>
 			</main>
 
 			<footer className="site-footer">
-				<div className="footer-brand">
-					<div className="brand-mark">
-						<img src={logochar} alt="StayTheme logo" />
+				<div className="footer-wrap">
+					<div className="footer-brand">
+						<div className="brand-mark">
+							<img src={logochar} alt="StayTheme logo" />
+						</div>
+						<p>
+							At StayTheme We handpick each property to ensure it meets our high standards for comfort, cleanliness, and quality.
+						</p>
 					</div>
-					<p>
-						At StayTheme we hand-pick themed properties across continents, curate concierge services, and bring serene
-						memories to modern explorers.
-					</p>
-				</div>
-				<div className="footer-links">
-					<div>
-						<h4>Quick Links</h4>
-						<ul>
-							<li>Home</li>
-							<li>About</li>
-							<li>Destinations</li>
-							<li>Blog</li>
-						</ul>
-					</div>
-					<div>
-						<h4>Policies</h4>
-						<ul>
-							<li>Terms of Use</li>
-							<li>Privacy Policy</li>
-							<li>Cookie Policy</li>
-							<li>Support</li>
-						</ul>
-					</div>
-					<div>
-						<h4>Social</h4>
-						<ul>
-							<li>Instagram</li>
-							<li>Facebook</li>
-							<li>LinkedIn</li>
-							<li>Twitter</li>
-						</ul>
+					<div className="footer-links">
+						<div>
+							<h4>Quick Links</h4>
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Destinations</li>
+								<li>Blog</li>
+							</ul>
+						</div>
+						<div>
+							<h4>Policies</h4>
+							<ul>
+								<li>Terms of Use</li>
+								<li>Privacy Policy</li>
+								<li>Cookie Policy</li>
+								<li>Support</li>
+							</ul>
+						</div>
+						<div>
+							<h4>Social</h4>
+							<ul>
+								<li>Instagram</li>
+								<li>Facebook</li>
+								<li>LinkedIn</li>
+								<li>Twitter</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div className="footer-bottom">
 					<span>© {new Date().getFullYear()} StayTheme. All rights reserved.</span>
-					<span>Designed for eco-friendly explorers.</span>
 				</div>
 			</footer>
 		</div>
